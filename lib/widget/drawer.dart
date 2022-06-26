@@ -10,6 +10,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.deepOrange.shade500,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -24,24 +25,42 @@ class MyDrawer extends StatelessWidget {
             ) 
           ),
           ListTile(
-            leading: Icon(CupertinoIcons.home),
+            leading: Icon(
+              CupertinoIcons.home,
+              color: Colors.white,
+            ),
             title: Text(
                 "Home",
                 textScaleFactor: 1.2,
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
           ),
           ListTile(
-            leading: Icon(CupertinoIcons.profile_circled),
+            leading: Icon(
+              CupertinoIcons.profile_circled,
+              color: Colors.white,
+            ),
             title: Text(
                 "Profile",
                 textScaleFactor: 1.2,
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
           ),
           ListTile(
-            leading: Icon(CupertinoIcons.mail),
+            leading: Icon(
+              CupertinoIcons.mail,
+              color: Colors.white,
+            ),
             title: Text(
-                "Enail Me",
+                "Email Me",
                 textScaleFactor: 1.2,
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
           )
         ],
