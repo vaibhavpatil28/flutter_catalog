@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widget/drawer.dart';
+
 class HomePage extends StatelessWidget {
 
   @override
@@ -8,10 +10,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Catalog'),
       ),
-      body: Center(
-        child: Container(child: Text("welcome to flutter")),
+      body: const Center(
+        child: Text("welcome to flutter"),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
